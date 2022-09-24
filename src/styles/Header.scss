@@ -10,14 +10,17 @@
   background-position: top;
   position: relative;
 
+
+  clip-path: polygon(0 0, 100% 0, 100% 77%, 0 97%);
+
   &__logo-box {
     position: absolute;
-    top: 40px;
-    left: 40px;
+    top: 4rem;
+    left: 4rem;
   }
 
   &__logo {
-    height: 35px;
+    height: 3.5rem;
   }
 
   &__text-box {
@@ -33,13 +36,13 @@
     text-transform: uppercase;
 
     backface-visibility: hidden;
-    margin-bottom: 60px;
+    margin-bottom: 6rem;
 
     &__main {
       display: block;
-      font-size: 60px;
+      font-size: 6rem;
       font-weight: 400;
-      letter-spacing: 35px;
+      letter-spacing: 3.5rem;
       animation-name: moveInLeft;
       animation-duration: 1s;
       animation-timing-function: ease-out;
@@ -47,9 +50,9 @@
 
     &__sub {
       display: block;
-      font-size: 20px;
+      font-size: 2rem;
       font-weight: 700;
-      letter-spacing: 17.4px;
+      letter-spacing: 1.75rem;
       animation: moveInRight 1s ease-out;
     }
   }
@@ -61,16 +64,17 @@
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 15px 40px;
+    padding: 1.5rem 4rem;
     display: inline-block;
-    border-radius: 100px;
+    border-radius: 10rem;
     transition: all .2s;
     position: relative;
+    font-size: 1.6rem;
   }
 
   &:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba($color: #000000, $alpha: .2);
+    box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .2);
 
     &::after {
       transform: scaleX(1.4) scaleY(1.6);
@@ -80,7 +84,7 @@
 
   &:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba($color: #000000, $alpha: .2);
+    box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .2);
   }
 
   &::after {
@@ -88,7 +92,7 @@
     display: inline-block;
     height: 100%;
     width: 100%;
-    border-radius: 100px;
+    border-radius: 10rem;
     position: absolute;
     top: 0;
     left: 0;
