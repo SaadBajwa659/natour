@@ -16,14 +16,14 @@ const Home = () => {
           <img src="img/logo-white.png" alt="Logo" className="header__logo" />
         </div>
         <div className="header__text-box">
-          <h1 className="header__heading-primary">
-            <span className="header__heading-primary__main">Outdoors</span>
-            <span className="header__heading-primary__sub">
+          <h1 className="heading-primary">
+            <span className="heading-primary--main">Outdoors</span>
+            <span className="heading-primary--sub">
               is where life happens
             </span>
           </h1>
 
-          <a href="#" className="btn btn-white btn-animated">Discover our tours</a>
+          <a href="#" className="btn btn--white btn--animated">Discover our tours</a>
         </div>
       </header>
     </div>
