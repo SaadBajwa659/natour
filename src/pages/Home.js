@@ -1,12 +1,20 @@
 import React from "react";
-import "../styles/Base.scss";
-import "../styles/Booking.scss";
-import "../styles/Description.scss";
-import "../styles/Features.scss";
-import "../styles/Footer.scss";
-import "../styles/Header.scss";
-import "../styles/Review.scss";
-import "../styles/Tours.scss";
+
+import "../sass/abstracts/Functions.scss";
+import "../sass/abstracts/Mixins.scss";
+import "../sass/abstracts/Variables.scss";
+
+import "../sass/base/Animation.scss";
+import "../sass/base/Base.scss";
+import "../sass/base/Typography.scss";
+import "../sass/base/Utilities.scss";
+
+import "../sass/components/Button.scss";
+
+import "../sass/layout/Footer.scss";
+import "../sass/layout/Header.scss";
+
+import "../sass/pages/Home.scss";
 
 const Home = () => {
   return (
