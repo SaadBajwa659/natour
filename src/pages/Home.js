@@ -12,6 +12,7 @@ import "../sass/base/Utilities.scss";
 import "../sass/components/Button.scss";
 
 import "../sass/layout/Footer.scss";
+import "../sass/layout/Grid.scss";
 import "../sass/layout/Header.scss";
 
 import "../sass/pages/Home.scss";
@@ -34,6 +35,79 @@ const Home = () => {
           <a href="#" className="btn btn--white btn--animated">Discover our tours</a>
         </div>
       </header>
+      {/* 
+      <section className="grid-test">
+
+        <div className="row">
+          <div className="col-1-of-2">
+            Col 1 of 2
+          </div>
+          <div className="col-1-of-2">
+            Col 1 of 2
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-1-of-3">
+            Col 1 of 3
+          </div>
+          <div className="col-1-of-3">
+            Col 1 of 3
+          </div>
+          <div className="col-1-of-3">
+            Col 1 of 3
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-1-of-3">
+            Col 1 of 3
+          </div>
+          <div className="col-2-of-3">
+            Col 2 of 3
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-2-of-4">
+            Col 1 of 4
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-3-of-4">
+            Col 3 of 4
+          </div>
+        </div>
+      </section>
+       */}
+
+
+
     </div>
   );
 };
