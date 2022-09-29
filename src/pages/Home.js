@@ -35,6 +35,15 @@ const Home = () => {
           <a href="#" className="btn btn--white btn--animated">Discover our tours</a>
         </div>
       </header>
+
+      <main>
+        <section className="section-about">
+          <h2 className="heading-secondary">
+            Exciting tours for adventurous people
+          </h2>
+        </section>
+      </main>
+
       {/* 
       <section className="grid-test">
 
