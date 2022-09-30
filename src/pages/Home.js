@@ -27,20 +27,30 @@ const Home = () => {
         <div className="header__text-box">
           <h1 className="heading-primary">
             <span className="heading-primary--main">Outdoors</span>
-            <span className="heading-primary--sub">
-              is where life happens
-            </span>
+            <span className="heading-primary--sub">is where life happens</span>
           </h1>
 
-          <a href="#" className="btn btn--white btn--animated">Discover our tours</a>
+          <a href="#" className="btn btn--white btn--animated">
+            Discover our tours
+          </a>
         </div>
       </header>
 
       <main>
         <section className="section-about">
-          <h2 className="heading-secondary">
-            Exciting tours for adventurous people
-          </h2>
+          <div className="u-center-text">
+            <h2 className="heading-secondary">
+              Exciting tours for adventurous people
+            </h2>
+          </div>
+          <div className="row">
+            <div className="col-1-of-2">
+              Text content
+            </div>
+            <div className="col-1-of-2">
+              Image composition
+            </div>
+        </div>
         </section>
       </main>
 
@@ -114,9 +124,6 @@ const Home = () => {
         </div>
       </section>
        */}
-
-
-
     </div>
   );
 };
