@@ -11,10 +11,12 @@ import "../sass/base/Base.scss";
 import "../sass/base/Typography.scss";
 import "../sass/base/Utilities.scss";
 
+import "../sass/components/Bg-video.scss";
 import "../sass/components/Button.scss";
 import "../sass/components/Card.scss";
 import "../sass/components/Composition.scss";
 import "../sass/components/Feature-box.scss";
+import "../sass/components/Form.scss";
 import "../sass/components/Story.scss";
 
 import "../sass/layout/Footer.scss";
@@ -257,6 +259,14 @@ const Home = () => {
           </div>
         </section>
         <section className="section-stories">
+          <div className="bg-video">
+            <video className="bg-video__content" autoPlay muted loop>
+              <source src="./img/video.mp4" type="video/mp4" />
+              <source src="./img/video.webm" type="video/webm" />
+              Your browse is not supported!
+            </video>
+          </div>
+
           <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary">
               We make people genuinely happy
@@ -265,7 +275,14 @@ const Home = () => {
 
           <div className="row">
             <div className="story">
-              <figure className="story__shape"></figure>
+              <figure className="story__shape">
+                <img
+                  src="./img/nat-8.jpg"
+                  alt="Person on a tour"
+                  className="story__img"
+                />
+                <figcaption className="story__caption">Mary Smith</figcaption>
+              </figure>
               <div className="story__text">
                 <h3 className="heading-tertiary u-margin-bottom-small">
                   I had the best week ever with my family
@@ -277,6 +294,76 @@ const Home = () => {
                   Aperiam, ipsum sapiente aspernatur libero repellat quis
                   consequatur ducimus quam nisi exercitationem omnis earum qui.
                 </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="row">
+            <div className="story">
+              <figure className="story__shape">
+                <img
+                  src="./img/nat-9.jpg"
+                  alt="Person on a tour"
+                  className="story__img"
+                />
+                <figcaption className="story__caption">Jack Wilson</figcaption>
+              </figure>
+              <div className="story__text">
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  WOW! My life is compeletely different now
+                </h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Aperiam, ipsum sapiente aspernatur libero repellat quis
+                  consequatur ducimus quam nisi exercitationem omnis earum qui.
+                  Aperiam, ipsum sapiente aspernatur libero repellat quis
+                  consequatur ducimus quam nisi exercitationem omnis earum qui.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div className="u-center-text u-margin-top-huge">
+            <a href="#" className="btn-text">
+              Read all stories &rarr;
+            </a>
+          </div>
+        </section>
+
+        <section className="section-book">
+          <div className="row">
+            <div className="book">
+              <div className="book__form">
+                <form action="#" className="form">
+                  <div className="u-margin-bottom-medium">
+                    <h2 className="heading-secondary">Start booking now</h2>
+                  </div>
+                  <div className="form__group">
+                    <input
+                      type="text"
+                      className="form__input"
+                      placeholder="Full name"
+                      id="name"
+                      required
+                    />
+                    <label htmlFor="name" className="form__label">
+                      Full name
+                    </label>
+                  </div>
+
+                  <div className="form__group">
+                    <input
+                      type="email"
+                      className="form__input"
+                      placeholder="Email address"
+                      id="email"
+                      required
+                    />
+                    <label htmlFor="email" className="form__label">
+                      Email address
+                    </label>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
