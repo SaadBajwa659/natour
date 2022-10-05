@@ -363,12 +363,103 @@ const Home = () => {
                       Email address
                     </label>
                   </div>
+
+                  <div className="form__group u-margin-bottom-medium">
+                    <div className="form__radio-group">
+                      <input
+                        type="radio"
+                        className="form__radio-input"
+                        id="small"
+                        name="size"
+                      />
+                      <label htmlFor="small" className="form__radio-label">
+                        <span className="form__radio-button"></span>
+                        Small tour group
+                      </label>
+                    </div>
+
+                    <div className="form__radio-group">
+                      <input
+                        type="radio"
+                        className="form__radio-input"
+                        id="large"
+                        name="size"
+                      />
+                      <label htmlFor="large" className="form__radio-label">
+                        <span className="form__radio-button"></span>
+                        Large tour group
+                      </label>
+                    </div>
+                  </div>
+
+                  <div className="form__group">
+                    <button className="btn btn--green">Next step &rarr;</button>
+                  </div>
                 </form>
               </div>
             </div>
           </div>
         </section>
       </main>
+
+      <footer className="footer">
+        <div className="footer__logo-box">
+          <img
+            src="./img/logo-green-2x.png"
+            alt="Full logo"
+            className="footer__logo"
+          />
+        </div>
+        <div className="row">
+          <div className="col-1-of-2">
+            <div className="footer__navigation">
+              <ul className="footer__list">
+                <li className="footer__item">
+                  <a href="#" className="footer__link">
+                    Company
+                  </a>
+                </li>
+                <li className="footer__item">
+                  <a href="#" className="footer__link">
+                    Contact us
+                  </a>
+                </li>
+                <li className="footer__item">
+                  <a href="#" className="footer__link">
+                    Careers
+                  </a>
+                </li>
+                <li className="footer__item">
+                  <a href="#" className="footer__link">
+                    Privacy Policy
+                  </a>
+                </li>
+                <li className="footer__item">
+                  <a href="#" className="footer__link">
+                    Terms
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="col-1-of-2">
+            <p className="footer__copyright">
+              Built by{" "}
+              <a href="#" className="footer__link">
+                Jonas Schmedtmann
+              </a>{" "}
+              for his online course{" "}
+              <a href="#" className="footer__link">
+                Advanced CSS and Sass
+              </a>{" "}
+              . Copyright &copy; by Jonas Schmedtmann. You are 100% allowed to use
+              this webpage for both personal and commercial use, but NOT to
+              claim it as your own design. A credit to the original author,
+              Jonas Schmedtmann, is of course highly appreciated!
+            </p>
+          </div>
+        </div>
+      </footer>
 
       {/* 
       <section className="grid-test">
