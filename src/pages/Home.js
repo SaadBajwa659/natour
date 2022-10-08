@@ -84,7 +84,7 @@ const Home = () => {
             <span className="heading-primary--sub">is where life happens</span>
           </h1>
 
-          <a href="#" className="btn btn--white btn--animated">
+          <a href="#section-tours" className="btn btn--white btn--animated">
             Discover our tours
           </a>
         </div>
@@ -193,7 +193,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="section-tours">
+        <section className="section-tours" id="section-tours" >
           <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary">Most popular tours</h2>
           </div>
@@ -224,7 +224,7 @@ const Home = () => {
                       <p className="card__price-only">Only</p>
                       <p className="card__price-value">$297</p>
                     </div>
-                    <a href="#" className="btn btn--white">
+                    <a href="#popup" className="btn btn--white">
                       Book now!
                     </a>
                   </div>
@@ -257,7 +257,7 @@ const Home = () => {
                       <p className="card__price-only">Only</p>
                       <p className="card__price-value">$497</p>
                     </div>
-                    <a href="#" className="btn btn--white">
+                    <a href="#popup" className="btn btn--white">
                       Book now!
                     </a>
                   </div>
@@ -290,7 +290,7 @@ const Home = () => {
                       <p className="card__price-only">Only</p>
                       <p className="card__price-value">$897</p>
                     </div>
-                    <a href="#" className="btn btn--white">
+                    <a href="#popup" className="btn btn--white">
                       Book now!
                     </a>
                   </div>
@@ -507,13 +507,14 @@ const Home = () => {
         </div>
       </footer>
 
-      <div className="popup">
+      <div className="popup" id="popup" >
         <div className="popup__content">
           <div className="popup__left">
             <img src="img/nat-8.jpg" alt="Tour photo" className="popup__img" />
             <img src="img/nat-9.jpg" alt="Tour photo" className="popup__img" />
           </div>
           <div className="popup__right">
+            <a href="#section-tours" className="popup__close">&times;</a>
             <h2 className="heading-secondary u-margin-bottom-small">Start booking now</h2>
             <h3 className="heading-tertiary u-margin-bottom-small">
               Important &ndash; Please read these terms before booking
