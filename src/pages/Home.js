@@ -2,31 +2,6 @@ import React from "react";
 import { BsGlobe, BsMap } from "react-icons/bs";
 import { AiOutlineCompass, AiOutlineHeart } from "react-icons/ai";
 
-import "../sass/abstracts/Functions.scss";
-import "../sass/abstracts/Mixins.scss";
-import "../sass/abstracts/Variables.scss";
-
-import "../sass/base/Animation.scss";
-import "../sass/base/Base.scss";
-import "../sass/base/Typography.scss";
-import "../sass/base/Utilities.scss";
-
-import "../sass/components/Bg-video.scss";
-import "../sass/components/Button.scss";
-import "../sass/components/Card.scss";
-import "../sass/components/Composition.scss";
-import "../sass/components/Feature-box.scss";
-import "../sass/components/Form.scss";
-import "../sass/components/Popup.scss";
-import "../sass/components/Story.scss";
-
-import "../sass/layout/Footer.scss";
-import "../sass/layout/Grid.scss";
-import "../sass/layout/Header.scss";
-import "../sass/layout/Navigation.scss";
-
-import "../sass/pages/Home.scss";
-
 const Home = () => {
   return (
     <div>
@@ -193,7 +168,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="section-tours" id="section-tours" >
+        <section className="section-tours" id="section-tours">
           <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary">Most popular tours</h2>
           </div>
@@ -507,15 +482,19 @@ const Home = () => {
         </div>
       </footer>
 
-      <div className="popup" id="popup" >
+      <div className="popup" id="popup">
         <div className="popup__content">
           <div className="popup__left">
             <img src="img/nat-8.jpg" alt="Tour photo" className="popup__img" />
             <img src="img/nat-9.jpg" alt="Tour photo" className="popup__img" />
           </div>
           <div className="popup__right">
-            <a href="#section-tours" className="popup__close">&times;</a>
-            <h2 className="heading-secondary u-margin-bottom-small">Start booking now</h2>
+            <a href="#section-tours" className="popup__close">
+              &times;
+            </a>
+            <h2 className="heading-secondary u-margin-bottom-small">
+              Start booking now
+            </h2>
             <h3 className="heading-tertiary u-margin-bottom-small">
               Important &ndash; Please read these terms before booking
             </h3>
@@ -535,7 +514,9 @@ const Home = () => {
               lacinia quis vel eros donec. Sit amet facilisis magna etiam.
               Imperdiet sed euismod nisi porta.
             </p>
-            <a href="#" className="btn btn--green">Book now</a>
+            <a href="#" className="btn btn--green">
+              Book now
+            </a>
           </div>
         </div>
       </div>

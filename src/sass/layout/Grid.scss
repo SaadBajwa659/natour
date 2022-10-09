@@ -2,16 +2,13 @@
   max-width: var(--grid-width);
   margin: 0 auto;
 
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
+  
   &:not(:last-child) {
     margin-bottom: var(--gutter-vertical);
   }
-
+  
+  @include clearfix;
+  
   [class^="col-"] {
     float: left;
 
