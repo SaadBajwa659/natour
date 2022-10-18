@@ -21,27 +21,27 @@ const Home = () => {
         <nav className="navigation__nav">
           <ul className="navigation__list">
             <li className="navigation__item">
-              <a href="#" className="navigation__link">
+              <a href="#header" className="navigation__link">
                 <span>01</span>About Natours
               </a>
             </li>
             <li className="navigation__item">
-              <a href="#" className="navigation__link">
+              <a href="#feature" className="navigation__link">
                 <span>02</span>Your Benefits
               </a>
             </li>
             <li className="navigation__item">
-              <a href="#" className="navigation__link">
+              <a href="#section-tours" className="navigation__link">
                 <span>03</span>Popular tours
               </a>
             </li>
             <li className="navigation__item">
-              <a href="#" className="navigation__link">
+              <a href="#stories" className="navigation__link">
                 <span>04</span>Stories
               </a>
             </li>
             <li className="navigation__item">
-              <a href="#" className="navigation__link">
+              <a href="#book" className="navigation__link">
                 <span>05</span>Book Now
               </a>
             </li>
@@ -49,7 +49,7 @@ const Home = () => {
         </nav>
       </div>
 
-      <header className="header">
+      <header className="header" id="header">
         <div className="header__logo-box">
           <img src="img/logo-white.png" alt="Logo" className="header__logo" />
         </div>
@@ -121,7 +121,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="section-features">
+        <section className="section-features" id="feature">
           <div className="row">
             <div className="col-1-of-4">
               <div className="feature-box">
@@ -285,7 +285,7 @@ const Home = () => {
             </a>
           </div>
         </section>
-        <section className="section-stories">
+        <section className="section-stories" id="stories">
           <div className="bg-video">
             <video className="bg-video__content" autoPlay muted loop>
               <source src="./img/video.mp4" type="video/mp4" />
@@ -357,7 +357,7 @@ const Home = () => {
           </div>
         </section>
 
-        <section className="section-book">
+        <section className="section-book" id="book">
           <div className="row">
             <div className="book">
               <div className="book__form">
