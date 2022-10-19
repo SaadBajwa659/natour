@@ -1,8 +1,21 @@
-import React from "react";
+import React, {/* useEffect, useRef */} from "react";
 import { BsGlobe, BsMap } from "react-icons/bs";
 import { AiOutlineCompass, AiOutlineHeart } from "react-icons/ai";
 
 const Home = () => {
+  // let wrapperRef = useRef(null);
+
+  // useEffect(() => {
+  //   function handleClickOutside(event: any) {
+  //     if (wrapperRef.current && !wrapperRef.current.contains(event.target)) {
+  //       setOpen(0);
+  //     }
+  //   }
+  //   document.addEventListener("mousedown", handleClickOutside);
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, [wrapperRef]);
   return (
     <div>
       <div className="navigation">
@@ -21,7 +34,7 @@ const Home = () => {
         <nav className="navigation__nav">
           <ul className="navigation__list">
             <li className="navigation__item">
-              <a href="#header" className="navigation__link">
+              <a href="#about" className="navigation__link">
                 <span>01</span>About Natours
               </a>
             </li>
@@ -49,7 +62,7 @@ const Home = () => {
         </nav>
       </div>
 
-      <header className="header" id="header">
+      <header className="header">
         <div className="header__logo-box">
           <img src="img/logo-white.png" alt="Logo" className="header__logo" />
         </div>
@@ -66,7 +79,7 @@ const Home = () => {
       </header>
 
       <main>
-        <section className="section-about">
+        <section className="section-about" id="about">
           <div className="u-center-text u-margin-bottom-big">
             <h2 className="heading-secondary">
               Exciting tours for adventurous people
@@ -441,8 +454,6 @@ const Home = () => {
               alt="Full logo"
             />
           </picture>
-
-          
         </div>
         <div className="row">
           <div className="col-1-of-2">
@@ -494,9 +505,9 @@ const Home = () => {
           </div>
         </div>
       </footer>
-
       <div className="popup" id="popup">
-        <div className="popup__content">
+        {/* ref={wrapperRef} */}
+        <div  className="popup__content">
           <div className="popup__left">
             <img src="img/nat-8.jpg" alt="Tour photo" className="popup__img" />
             <img src="img/nat-9.jpg" alt="Tour photo" className="popup__img" />

@@ -9,12 +9,6 @@
   opacity: 0;
   visibility: hidden;
   transition: all 0.3s;
-  &:link,
-  &:visited {
-    visibility: hidden;
-  }
-
-  
 
   @supports (-webkit-backdrop-filter: blur(10px)) or (backdrop-filter: blur(10px)) {
     -webkit-backdrop-filter: blur(10px);
@@ -34,7 +28,7 @@
     opacity: 0;
     transform:translate(-50%, -50%) scale(.25);
     transition: all .5s .2s;
-    z-index: 4000;
+    z-index: 5000;
   }
 
   &__left {
@@ -118,5 +112,10 @@
     &:hover {
       color: var(--color-primary);
     }
+  }
+
+  &:focus &__content{
+    opacity: 0;
+    transform: translate(0, 0) scale(0);
   }
 }
